@@ -1,0 +1,257 @@
+body
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(25, 22, 43);
+}
+header
+{
+    height: 100px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_links
+{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Logo
+{
+    border-radius: 50%;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+.Page_link
+{
+    text-decoration: none;
+    color: rgb(0, 255, 161);
+    font-size: 20px;
+}
+.Profile_link
+{
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main
+{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+input
+{
+    border: 10px;
+    border-radius: 20px;
+    border-color: aqua;
+    background-color: rgb(66, 100, 87);
+}
+button
+{
+    border: 10px;
+    border-radius: 20px;
+    border-color: aqua;
+    background-color: rgb(66, 100, 87);
+    color: aqua;
+}
+.categories
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.category_box
+{
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.category_link
+{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.category_text
+{
+    text-decoration: none;
+    color: rgb(0, 255, 161);
+    font-size: 20px;
+}
+.category_image
+{
+    width: 100px;
+    height: 100px;
+}
+.mysteries
+{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mystery_box
+{
+    width: 225px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    border: 5px solid rgb(0, 255, 161);
+}
+.mystery_text
+{
+    width: 200px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 16px;
+}
+.mystery_title
+{
+    width: 200px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.mystery_link
+{
+    margin: 25px;
+    width: 200px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.mystery_image
+{
+    height: 200px;
+    width: 200px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    border: 10px;
+    border-color: azure;
+    color: whitesmoke;
+    background-color: rgb(36, 37, 37);
+}
+.about
+{
+    color:  rgb(0, 255, 161);
+    width: 600px;
+}
+.profile_image
+{
+    border-radius: 50px;
+    border: 10px solid aqua;
+    width: 400px;
+    height: 400px;
+}
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.profile_text
+{
+    color: aqua;
+    font-size: 24px;
+}
+.Mystery_mystery
+{
+    position: relative;
+    left: -50px;
+    height: 750px;
+    width: 600px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+.Mystery_image
+{
+    width: 600px;
+    height: 600px;
+    margin: 25px;
+}
+.Mystery_title
+{
+    height: 20px;
+    width: 600px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 32px;
+}
+.Mystery_text
+{
+    margin-top: -10px;
+    width: 600px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 24px;
+}
+.Mystery_Comments
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment_text
+{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.comment_image
+{
+    height: 50px;
+    width: 50px;
+}
+.comment_creator
+{
+    display: flex;
+    flex-direction: row;
+}
+.comments
+{
+    border: 5px solid aqua;
+    border-radius: 10px;
+    position: relative;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}

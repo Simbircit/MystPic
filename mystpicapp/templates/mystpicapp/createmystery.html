@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'mystpicapp/style.css'%}">    <title>MystPic</title>
+</head>
+<body>
+    <header>
+        <div class="header_links">
+            <a href="/" class="Page_link">
+                <img src="{% static 'mystpicapp\images\Group 1.png' %}" alt="" class="Logo">
+            </a>
+            <a href="{%url 'catalog'%}" class="Page_link">Catalog</a>
+            <a href="{%url 'createmystery'%}" class="Page_link">Create Mystery</a>
+        </div>
+        <div class="header_links">
+            {% if user.is_authenticated %}
+            <a href="{%url 'profile' user.id%}" class="Profile_link">
+                <img src="{% static 'mystpicapp\images\profile\user.png' %}" alt="" class="Logo">
+                <h2 class="Page_link">{{user.username}}</h2>
+            </a>
+            <a href="{%url 'logout'%}" class="Page_link">Exit</a>
+            {% else %}
+            <a href="{{'accounts/login/'}}" class="Page_link">Login</a>
+            <a href="{%url 'register'%}" class="Page_link">Register</a>
+            {% endif %}
+        </div>
+    </header>
+    <main>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token%}
+            {{form.as_p}}
+            <button type="submit">Post</button>
+        </form>
+        {% if img_obj %}
+        <h3>Succesfully uploaded : {{img_obj.title}}</h3>
+        <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
+        {% endif %}
+    </main>
+</body>
+</html>
